@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.menu-navegacao {
+    height: 65px;
+    background-color: #38393C;
+}
+
+.menu-navegacao>ul {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-inline-end: 1.5rem;
+}
+
+.menu-navegacao a {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    color:azure;
+    text-decoration: none;   /* none = nenhum */
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem; /* equivalente a 120% do tamanho padrão */
+    padding: 0 1rem;
+}
+
+/* TODO: resolver problema do menu se mover no hover das ancoras */
+.menu-navegacao a:hover {
+    background-color: azure;
+    color: #38393C;
+    font-weight: 600;
+    transition-duration: 300ms;
+}
+
+.breadcrumbs {
+    height: 50px;
+}
+
+.breadcrumbs>ul {
+    height: 100%;
+    display: flex;
+    margin-inline-start: 1.5rem;
+}
+
+.breadcrumbs a {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    color: #777;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+    content: ">";
+}
+/* aplica para todos os elementos, menos (não) para o último filho */
