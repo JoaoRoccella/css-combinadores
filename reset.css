@@ -55,6 +55,6 @@ table {
 }
 
 a {
-	cursor: initial;
+	cursor: initial; /* retira estilos de cursor */
 	text-decoration: none;
 }
