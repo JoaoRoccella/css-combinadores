@@ -47,6 +47,6 @@ table {
 	border-spacing: 0;
 }
 a {
-    text-decoration: none;
-    cursor: initial;
+	cursor: initial; /* retira estilos de cursor */
+	text-decoration: none;
 }
